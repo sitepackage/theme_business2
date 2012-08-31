@@ -17,6 +17,7 @@
 [% content_for_header %]
 </head>
 <body>
+  xxx
   <script type="text/javascript" charset="utf-8">
     $j = jQuery.noConflict();
     // fancybox
