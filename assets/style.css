@@ -608,6 +608,9 @@ form .hint_area {
 #main .message {
 	padding:10px;
 }
+#main .facebook_like_box{
+  margin:0 0 20px 0;
+}
 .highlight_wrapper{
 	background-color:#fff;
 	margin:20px 0;

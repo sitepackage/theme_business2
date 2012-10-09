@@ -169,8 +169,13 @@
       <div class="main">
         [% content %]
       </div>
+      [%- if settings.facebook_uri && settings.like_box_enabled %]
+      <div class="facebook_like_box">
+        <iframe src="http://www.facebook.com/plugins/likebox.php?href=[% settings.facebook_uri | uri %]&amp;width=950&amp;colorscheme=light&amp;show_faces=[% settings.like_box_show_faces ? 'true' : 'false' %]&amp;stream=[% settings.like_box_show_stream ? 'true' : 'false' %]&amp;header=[% settings.like_box_show_header ? 'true' : 'false' %]&amp;height=[% settings.like_box_height ? settings.like_box_height : '100' %]" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:950px; height:[% settings.like_box_height ? settings.like_box_height : '100' %]px;"></iframe>
+      </div>
+      [%- end %]         
     </div>
-    <div class="clear"></div>
+    <div class="clear"></div> 
   </div>
   <div id="footer_wrapper">
     <div id="footer">
